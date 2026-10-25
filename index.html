@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#F5F7FA" />
+<title>Hayfield is closed, and it is for sale</title>
+<meta name="description" content="Hayfield is closed and for sale: the product, the codebase and the hayfield.in domain of an AI room visualiser for tile and stone dealers." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hayfield" />
+<meta property="og:title" content="Hayfield is closed, and it is for sale" />
+<meta property="og:description" content="The product, the codebase and the hayfield.in domain of an AI room visualiser for tile and stone dealers, available to a buyer." />
+<meta property="og:url" content="https://hayfieldai.github.io/" />
+<meta property="og:image" content="https://hayfieldai.github.io/demo/hayfield-demo-poster.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
+<meta property="og:video" content="https://hayfieldai.github.io/demo/hayfield-demo.mp4" />
+<meta property="og:video:type" content="video/mp4" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://hayfieldai.github.io/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Gabarito:wght@500;600&family=Spline+Sans+Mono:wght@400&display=swap" rel="stylesheet" />
+<style>
+  /* The app's own tokens, from the mark: navy ink, violet leaves, cool paper. */
+  :root {
+    --background: #f5f7fa;
+    --surface: #ffffff;
+    --ink: #132135;
+    --muted: #5a687c;
+    --line: #dfe5ec;
+    --accent: #7b3ecc;
+    --accent-bright: #9764d8;
+    --accent-soft: #f1edfa;
+    --sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --display: 'Gabarito', var(--sans);
+    --mono: 'Spline Sans Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', monospace;
+    --shadow: 0 1px 2px rgb(19 33 53 / 0.06), 0 1px 3px rgb(19 33 53 / 0.04);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--sans);
+    letter-spacing: -0.011em;
+  }
+  a { color: inherit; }
+  .mono {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+  }
+  header, footer { padding: 24px 20px 0; display: flex; align-items: center; justify-content: space-between; }
+  footer { padding: 32px 20px; border-top: 1px solid var(--line); flex-wrap: wrap; gap: 12px; color: var(--muted); }
+  .lockup { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+  .lockup svg { height: 24px; width: auto; }
+  .wordmark { font-family: var(--display); font-size: 19px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+  .stop { color: var(--accent-bright); }
+  .nav-link { color: rgb(19 33 53 / 0.8); text-decoration: none; transition: color .15s; }
+  .nav-link:hover { color: var(--ink); }
+  main { width: 100%; max-width: 64rem; margin: 0 auto; flex: 1; padding: 80px 20px 96px; }
+  .eyebrow { color: var(--accent); margin: 0; }
+  h1 {
+    margin: 20px 0 0;
+    max-width: 48rem;
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(2.6rem, 6.4vw, 5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+  }
+  .lede { margin: 32px 0 0; max-width: 42rem; font-size: 18px; line-height: 1.65; color: var(--muted); }
+  .cta { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+  .button {
+    display: inline-flex; align-items: center; height: 48px; padding: 0 24px;
+    border-radius: 12px; background: var(--accent); color: #fff; box-shadow: var(--shadow);
+    font-size: 14px; font-weight: 600; text-decoration: none; transition: background .15s;
+  }
+  .button:hover { background: #6d36b8; }
+  .or { font-size: 14px; color: var(--muted); }
+  .or a { color: var(--ink); text-underline-offset: 4px; }
+  section { margin-top: 80px; }
+  section h2.mono { color: var(--muted); margin: 0; }
+  video {
+    display: block; margin-top: 24px; width: 100%; aspect-ratio: 16 / 9;
+    border-radius: 16px; background: var(--surface); box-shadow: var(--shadow);
+  }
+  .lots { margin-top: 24px; display: grid; gap: 16px; }
+  .lot { border-radius: 16px; background: var(--surface); padding: 24px; box-shadow: var(--shadow); }
+  .lot .n { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+  .lot h3 { margin: 12px 0 0; font-family: var(--display); font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+  .lot p { margin: 12px 0 0; font-size: 14px; line-height: 1.65; color: var(--muted); }
+  .ran { display: grid; gap: 40px; }
+  .ran p { margin: 20px 0 0; max-width: 24rem; font-size: 14px; line-height: 1.65; color: var(--muted); }
+  dl { margin: 0; border-top: 1px solid var(--line); }
+  dl div { display: grid; grid-template-columns: 8rem 1fr; gap: 16px; padding: 16px 0; font-size: 14px; border-bottom: 1px solid var(--line); }
+  dt { font-weight: 500; }
+  dd { margin: 0; color: var(--muted); }
+  .users { border-radius: 16px; background: var(--accent-soft); padding: 24px; }
+  .users h2 { margin: 0; font-family: var(--display); font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+  .users p { margin: 12px 0 0; max-width: 42rem; font-size: 14px; line-height: 1.65; color: rgb(19 33 53 / 0.8); }
+  .users a { text-underline-offset: 4px; }
+  @media (min-width: 640px) {
+    header, footer { padding-left: 24px; padding-right: 24px; }
+    main { padding-left: 24px; padding-right: 24px; }
+  }
+  @media (min-width: 768px) {
+    main { padding-top: 112px; }
+    .lots { grid-template-columns: repeat(3, 1fr); }
+    .ran { grid-template-columns: 1fr 1.4fr; }
+    .users { padding: 32px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="lockup" href="/" aria-label="Hayfield">
+    <svg viewBox="0 0 464 517" role="img" aria-hidden="true">
+      <g fill="#132135">
+        <path d="M141.441 280.615C175.877 302.189 210.904 335.927 214.161 367.408C217.589 359.23 224.581 338.19 216.352 319.456C208.545 301.68 173.371 275.807 154.172 263.362C152.479 262.264 150.25 262.638 148.972 264.198L140.432 274.614C138.885 276.501 139.372 279.319 141.441 280.615Z" />
+        <path d="M321.102 280.616C286.715 302.19 252.355 335.928 249.099 367.408C245.67 359.23 237.961 338.19 246.19 319.456C253.997 301.68 289.171 275.807 308.37 263.362C310.063 262.264 312.292 262.638 313.57 264.198L322.11 274.614C323.657 276.501 323.169 279.319 321.102 280.616Z" />
+        <path d="M215.386 193.041C215.41 189.745 218.089 187.085 221.386 187.085H240.451C243.729 187.085 246.4 189.716 246.45 192.994L251.26 510.083C251.311 513.432 248.61 516.174 245.261 516.174H219.078C215.747 516.174 213.054 513.461 213.078 510.131L215.386 193.041Z" />
+      </g>
+      <path d="M121.443 101.419C169.364 106.288 210.053 167.264 184.9 211.25C129.491 203.896 102.745 143.677 121.443 101.419Z" fill="#C5B3E3" />
+      <path d="M342.542 101.419C294.62 106.288 253.932 167.264 279.085 211.25C334.493 203.896 361.24 143.677 342.542 101.419Z" fill="#C5B3E3" />
+      <path d="M10.9825 188.44C56.5784 172.909 118.964 211.401 114.414 261.866C60.9762 278.255 11.5814 234.645 10.9825 188.44Z" fill="#A178D8" />
+      <path d="M453.003 188.44C407.407 172.909 345.021 211.401 349.571 261.866C403.009 278.255 452.404 234.645 453.003 188.44Z" fill="#A178D8" />
+      <path d="M234.13 4.228C272.738 30.244 273.865 84.3404 232.166 105.754C192.719 79.8329 196.101 27.9895 234.13 4.228Z" fill="#9764D8" />
+    </svg>
+    <span class="wordmark">hayfield<span class="stop">.ai</span></span>
+  </a>
+  <a class="mono nav-link" href="mailto:hayfieldai@gmail.com?subject=Buying%20Hayfield">Contact</a>
+</header>
+
+<main>
+  <p class="mono eyebrow">October 2026</p>
+  <h1>Hayfield is closed, and it is for sale.</h1>
+  <p class="lede">
+    Hayfield let tile and stone dealers put their own products on a photo of a customer's room,
+    price the result, and send it for approval. The software works. It did not find enough paying
+    shops to keep going, so we have stopped running it, and the whole of it is available to
+    someone who can take it further.
+  </p>
+  <div class="cta">
+    <a class="button" href="mailto:hayfieldai@gmail.com?subject=Buying%20Hayfield">Make an offer</a>
+    <span class="or">or write to <a href="mailto:hayfieldai@gmail.com?subject=Buying%20Hayfield">hayfieldai@gmail.com</a></span>
+  </div>
+
+  <section aria-labelledby="demo">
+    <h2 id="demo" class="mono">The product, in 70 seconds</h2>
+    <!-- The captions are burned into the picture, so the track stays off by default
+         and exists for screen readers. -->
+    <video src="/demo/hayfield-demo.mp4" poster="/demo/hayfield-demo-poster.jpg" controls playsinline preload="metadata">
+      <track kind="captions" src="/demo/hayfield-demo.vtt" srclang="en" label="English" />
+      <a href="/demo/hayfield-demo.mp4">Download the demo video</a>
+    </video>
+  </section>
+
+  <section aria-labelledby="lots">
+    <h2 id="lots" class="mono">What is for sale</h2>
+    <div class="lots">
+      <article class="lot">
+        <span class="n">01</span>
+        <h3>The product</h3>
+        <p>A working app for tile and stone dealers: renders matched to a real product swatch, a material library with CSV import, customer records, branded proposal links, team workspaces, Razorpay billing, coupons and a staff admin panel.</p>
+      </article>
+      <article class="lot">
+        <span class="n">02</span>
+        <h3>The codebase</h3>
+        <p>Three repositories with their full history: a FastAPI and Postgres backend with migrations and tests, a React and TypeScript web app, and the Astro blog. About 700 commits, with the operating notes and CI already written.</p>
+      </article>
+      <article class="lot">
+        <span class="n">03</span>
+        <h3>The domain</h3>
+        <p>hayfield.in, registered until May 2027 and transferable to a buyer. Built India-first, with UPI-ready billing, for a trade where dealers sell on WhatsApp.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="ran" aria-labelledby="stack">
+    <div>
+      <h2 id="stack" class="mono">How it ran</h2>
+      <p>Every service has been switched off and the code is untouched, so a buyer deploys it on their own accounts. The notes say how, including the traps that already cost a day.</p>
+    </div>
+    <dl>
+      <div><dt>API</dt><dd>Google Cloud Run, scales to zero</dd></div>
+      <div><dt>Web</dt><dd>Cloudflare Pages, R2 for images</dd></div>
+      <div><dt>Models</dt><dd>Replicate nano-banana, fal, Gemini on Vertex. No GPUs</dd></div>
+      <div><dt>Accounts</dt><dd>Clerk for sign-in, Razorpay for payments</dd></div>
+      <div><dt>Running cost</dt><dd>About Rs 1,000 a month before usage</dd></div>
+    </dl>
+  </section>
+
+  <section class="users" aria-labelledby="users">
+    <h2 id="users">If you used Hayfield</h2>
+    <p>
+      Your account no longer opens, and the app's servers and database are shut down. We have kept
+      a private archive. If you want a copy of your rooms or materials, or want your data erased
+      from the archive as well, write to <a href="mailto:hayfieldai@gmail.com">hayfieldai@gmail.com</a>.
+      Thank you for trying it.
+    </p>
+  </section>
+</main>
+
+<footer class="mono">
+  <span>Hayfield, 2026</span>
+  <span>Built by Shravan Goswami. Marketing by Harnil and Fenil.</span>
+</footer>
+</body>
+</html>
