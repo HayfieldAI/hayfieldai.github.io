@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://hayfieldai.github.io/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <image:image>
+      <image:loc>https://hayfieldai.github.io/og.jpg</image:loc>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://hayfieldai.github.io/demo/hayfield-demo-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Hayfield product demo</video:title>
+      <video:description>Seventy seconds of Hayfield: a customer photographs their room by scanning a code, the dealer's own tile catalogue is applied to the walls and floor, the job is set out and priced, and a branded proposal goes to the customer.</video:description>
+      <video:content_loc>https://hayfieldai.github.io/demo/hayfield-demo.mp4</video:content_loc>
+      <video:duration>71</video:duration>
+      <video:publication_date>2026-08-27T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>
