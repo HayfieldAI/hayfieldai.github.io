@@ -6,6 +6,7 @@ the images and metadata that make the link preview and search results look right
 
 - `og.jpg` is the 1200x630 link preview. `demo/hayfield-demo-poster.jpg` sits under the player,
   and `demo/hayfield-demo-thumbnail.jpg` is the same frame with the play button, for search results.
-- `404.html` is the page itself with `noindex`, so any stray path still lands on the sale.
+- `404.html` sends every unknown address (old dealer pages, proposal links, app screens) straight
+  to the home page.
 
 Write to hayfieldai@gmail.com to make an offer.

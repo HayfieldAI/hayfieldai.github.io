@@ -203,7 +203,7 @@
   .player:not(.is-enhanced) video { cursor: auto; }
   .player-big {
     position: absolute; left: 50%; top: 50%;
-    width: clamp(56px, 8.75cqw, 112px); aspect-ratio: 1;
+    width: clamp(48px, 8.75cqw, 112px); aspect-ratio: 1;
     display: grid; place-items: center;
     border: 0; border-radius: 50%; padding: 0;
     background: var(--accent); color: #fff; cursor: pointer;
@@ -270,10 +270,6 @@
   .player:fullscreen .player-stage { flex: 1; aspect-ratio: auto; background: #000; }
   .player:fullscreen video { background: #000; }
   .player:fullscreen .player-bar { background: var(--ink); padding-bottom: env(safe-area-inset-bottom); }
-  @container (max-width: 560px) {
-    .player[data-state="idle"] .player-big,
-    .player[data-state="ended"] .player-big { left: 76.6%; }
-  }
   @container (max-width: 400px) {
     .pb-sep, .pb-total { display: none; }
     .pb-time { padding-right: 4px; }
